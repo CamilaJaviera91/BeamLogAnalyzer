@@ -24,6 +24,22 @@ def generate_log_line(base_time):
     timestamp = base_time.strftime('%Y-%m-%d %H:%M:%S')
     method = random.choice(METHODS)
     endpoint = random.choice(ENDPOINTS)
-    status = random.choice(STATUS_CODES, weights=STATUS_WEIGHTS, K=1)[0]
+    status = random.choices(STATUS_CODES, weights=STATUS_WEIGHTS, k=1)[0]
     response_time = random.randint(50, 500)
     return f"{timestamp} {method} {endpoint} {status} {response_time}ms"
+
+def generate_logs(num_lines=500):
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+    
+    base_time = datetime.now()
+
+    with open(OUTPUT_FILE, "w") as f:
+        for i in range(num_lines):
+            log_time = base_time + timedelta(seconds=i * random.randint(1, 5))
+            f.write(generate_log_line(log_time) + "\n")
+    
+    print(f"✅ Generate {num_lines} logs at {OUTPUT_FILE}")
+
+if __name__ == "__main__":
+    generate_logs(1000)
