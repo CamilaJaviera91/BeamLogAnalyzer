@@ -19,3 +19,11 @@ METHODS = ["GET", "POST", "PUT", "DELETE"]
 
 STATUS_CODES = [200, 201, 400, 401, 403, 404, 500, 502, 503]
 STATUS_WEIGHTS = [0.6, 0.05, 0.05, 0.05, 0.05, 0.1, 0.05, 0.025, 0.025]
+
+def generate_log_line(base_time):
+    timestamp = base_time.strftime('%Y-%m-%d %H:%M:%S')
+    method = random.choice(METHODS)
+    endpoint = random.choice(ENDPOINTS)
+    status = random.choice(STATUS_CODES, weights=STATUS_WEIGHTS, K=1)[0]
+    response_time = random.randint(50, 500)
+    return f"{timestamp} {method} {endpoint} {status} {response_time}ms"
