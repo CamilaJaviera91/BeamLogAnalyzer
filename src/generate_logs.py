@@ -5,7 +5,7 @@ import os
 
 fake = Faker()
 
-OUTPUT_DIR = "data/raw"
+OUTPUT_DIR = "src/data/raw"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "logs.log")
 
 ENDPOINTS = ["/api/users",
