@@ -26,6 +26,18 @@ def generate_log_line(base_time):
     endpoint = random.choice(ENDPOINTS)
     status = random.choices(STATUS_CODES, weights=STATUS_WEIGHTS, k=1)[0]
     response_time = random.randint(50, 500)
+
+    if random.random() < 0.05:
+        endpoint = ""
+    if random.random() < 0.05:
+        status = 999
+    if random.random() < 0.03:
+        response_time = random.choice([-100, 99999])
+    if random.random() < 0.02:
+        timestamp = base_time.strftime("%Y/%m/%d-%H:%M:%S")
+    if random.random() < 0.01:
+        return "BAD_LOG_LINE"
+
     return f"{timestamp} {method} {endpoint} {status} {response_time}ms"
 
 def generate_logs(num_lines=500):
