@@ -27,4 +27,4 @@ def validate_logs_in_folder(folder="data/raw"):
                     print(f"   ... and {len(errors)-5} more errors")
 
 if __name__ == "__main__":
-    validate_logs_in_folder("data/raw")
+    validate_logs_in_folder("src/data/raw")
