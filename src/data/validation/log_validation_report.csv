@@ -1,5 +1,5 @@
 file,line_number,bad_line
-logs.log,24,BAD_LOG_LIN
+logs.log,24,BAD_LOG_LINE
 logs.log,50,2025/09/07-22:10:23 PUT /api/orders 200 74ms
 logs.log,53,2025-09-07 22:12:16 DELETE /api/payments 200 -100ms
 logs.log,103,2025-09-07 22:13:02 PUT /api/payments 403 -100ms
