@@ -1,5 +1,7 @@
 import os
 import re
+import csv
+import json
 
 LOG_PATTERN = re.compile(r'(\S+ \S+) (\S+) (\S*) (\d{3}) (\d+)ms')
 
@@ -8,23 +10,40 @@ def validate_log_file(filepath):
     with open(filepath, "r") as f:
         for i, line in enumerate(f, start=1):
             if not LOG_PATTERN.match(line.strip()):
-                errors.append((i, line.strip()))
+                errors.append({
+                    "file": os.path.basename(filepath),
+                    "line_number": i,
+                    "bad_line": line.strip()
+                })
     return errors
 
-def validate_logs_in_folder(folder="data/raw"):
+def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/validation"):
+    all_errors = []
+
+    os.makedirs(report_folder, exist_ok=True)
+
     for filename in os.listdir(folder):
         if filename.endswith(".log"):
             filepath = os.path.join(folder, filename)
             errors = validate_log_file(filepath)
-            
+            all_errors.extend(errors)
+
             if not errors:
                 print(f"✅ {filename}: All lines valid")
             else:
                 print(f"❌ {filename}: Found {len(errors)} invalid lines")
-                for line_num, bad_line in errors[:5]: 
-                    print(f"   → Line {line_num}: {bad_line}")
-                if len(errors) > 5:
-                    print(f"   ... and {len(errors)-5} more errors")
+
+    csv_path = os.path.join(report_folder, "log_validation_report.csv")
+    with open(csv_path, "w", newline="") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=["file", "line_number", "bad_line"])
+        writer.writeheader()
+        writer.writerows(all_errors)
+
+    json_path = os.path.join(report_folder, "log_validation_report.json")
+    with open(json_path, "w") as jsonfile:
+        json.dump(all_errors, jsonfile, indent=4)
+
+    print(f"\n📄 Report saved in:\n   - {csv_path}\n   - {json_path}")
 
 if __name__ == "__main__":
-    validate_logs_in_folder("src/data/raw")
+    validate_logs_in_folder("src/data/raw", "src/data/validation")
