@@ -1,0 +1,44 @@
+file,line_number,bad_line
+logs.log,24,BAD_LOG_LINE
+logs.log,50,2025/09/07-22:10:23 PUT /api/orders 200 74ms
+logs.log,53,2025-09-07 22:12:16 DELETE /api/payments 200 -100ms
+logs.log,103,2025-09-07 22:13:02 PUT /api/payments 403 -100ms
+logs.log,139,BAD_LOG_LINE
+logs.log,175,2025/09/07-22:10:50 PUT  200 179ms
+logs.log,180,2025-09-07 22:13:54 DELETE /api/cart 200 -100ms
+logs.log,209,2025/09/07-22:18:20 GET /api/orders 200 248ms
+logs.log,219,2025/09/07-22:11:34 GET /api/users 200 243ms
+logs.log,227,2025/09/07-22:15:28 GET /api/payments 999 238ms
+logs.log,230,2025/09/07-22:11:45 PUT /api/products 201 198ms
+logs.log,241,2025/09/07-22:19:56 DELETE /api/cart 200 252ms
+logs.log,247,2025/09/07-22:28:26 PUT /api/payments 500 263ms
+logs.log,261,2025/09/07-22:29:36 GET /api/orders 200 146ms
+logs.log,327,BAD_LOG_LINE
+logs.log,336,2025/09/07-22:19:06 POST /api/reviews 200 160ms
+logs.log,365,2025-09-07 22:32:12 PUT /api/orders 200 -100ms
+logs.log,378,2025-09-07 22:33:04 POST /api/users 201 -100ms
+logs.log,402,BAD_LOG_LINE
+logs.log,438,2025-09-07 22:44:21 PUT /api/cart 404 -100ms
+logs.log,468,2025-09-07 22:46:51 GET /api/products 200 -100ms
+logs.log,512,BAD_LOG_LINE
+logs.log,532,2025/09/07-22:25:38 DELETE /api/products 400 410ms
+logs.log,548,BAD_LOG_LINE
+logs.log,610,2025/09/07-22:38:23 GET /api/users 404 99999ms
+logs.log,639,2025-09-07 22:29:12 POST /api/orders 200 -100ms
+logs.log,689,BAD_LOG_LINE
+logs.log,715,2025-09-07 22:31:44 POST /api/payments 200 -100ms
+logs.log,723,BAD_LOG_LINE
+logs.log,792,2025-09-07 22:47:29 GET /api/orders 403 -100ms
+logs.log,807,BAD_LOG_LINE
+logs.log,830,2025-09-07 22:21:45 POST /api/reviews 200 -100ms
+logs.log,836,2025-09-07 23:17:31 DELETE /api/reviews 200 -100ms
+logs.log,839,BAD_LOG_LINE
+logs.log,840,2025/09/07-22:35:54 POST /api/reviews 403 229ms
+logs.log,863,2025/09/07-22:36:40 PUT  401 99ms
+logs.log,883,2025/09/07-22:52:02 GET /api/users 404 56ms
+logs.log,884,2025/09/07-22:22:39 POST /api/reviews 500 393ms
+logs.log,895,2025/09/07-23:22:26 PUT /api/payments 200 458ms
+logs.log,927,2025/09/07-22:38:48 DELETE /api/payments 200 273ms
+logs.log,945,2025/09/07-22:39:24 POST /api/products 404 441ms
+logs.log,947,2025/09/07-23:11:00 PUT /api/payments 502 201ms
+logs.log,960,2025-09-07 23:11:52 PUT /api/users 200 -100ms

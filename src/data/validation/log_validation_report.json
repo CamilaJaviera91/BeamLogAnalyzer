@@ -1,0 +1,217 @@
+[
+    {
+        "file": "logs.log",
+        "line_number": 24,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 50,
+        "bad_line": "2025/09/07-22:10:23 PUT /api/orders 200 74ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 53,
+        "bad_line": "2025-09-07 22:12:16 DELETE /api/payments 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 103,
+        "bad_line": "2025-09-07 22:13:02 PUT /api/payments 403 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 139,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 175,
+        "bad_line": "2025/09/07-22:10:50 PUT  200 179ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 180,
+        "bad_line": "2025-09-07 22:13:54 DELETE /api/cart 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 209,
+        "bad_line": "2025/09/07-22:18:20 GET /api/orders 200 248ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 219,
+        "bad_line": "2025/09/07-22:11:34 GET /api/users 200 243ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 227,
+        "bad_line": "2025/09/07-22:15:28 GET /api/payments 999 238ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 230,
+        "bad_line": "2025/09/07-22:11:45 PUT /api/products 201 198ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 241,
+        "bad_line": "2025/09/07-22:19:56 DELETE /api/cart 200 252ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 247,
+        "bad_line": "2025/09/07-22:28:26 PUT /api/payments 500 263ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 261,
+        "bad_line": "2025/09/07-22:29:36 GET /api/orders 200 146ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 327,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 336,
+        "bad_line": "2025/09/07-22:19:06 POST /api/reviews 200 160ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 365,
+        "bad_line": "2025-09-07 22:32:12 PUT /api/orders 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 378,
+        "bad_line": "2025-09-07 22:33:04 POST /api/users 201 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 402,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 438,
+        "bad_line": "2025-09-07 22:44:21 PUT /api/cart 404 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 468,
+        "bad_line": "2025-09-07 22:46:51 GET /api/products 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 512,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 532,
+        "bad_line": "2025/09/07-22:25:38 DELETE /api/products 400 410ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 548,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 610,
+        "bad_line": "2025/09/07-22:38:23 GET /api/users 404 99999ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 639,
+        "bad_line": "2025-09-07 22:29:12 POST /api/orders 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 689,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 715,
+        "bad_line": "2025-09-07 22:31:44 POST /api/payments 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 723,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 792,
+        "bad_line": "2025-09-07 22:47:29 GET /api/orders 403 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 807,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 830,
+        "bad_line": "2025-09-07 22:21:45 POST /api/reviews 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 836,
+        "bad_line": "2025-09-07 23:17:31 DELETE /api/reviews 200 -100ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 839,
+        "bad_line": "BAD_LOG_LINE"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 840,
+        "bad_line": "2025/09/07-22:35:54 POST /api/reviews 403 229ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 863,
+        "bad_line": "2025/09/07-22:36:40 PUT  401 99ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 883,
+        "bad_line": "2025/09/07-22:52:02 GET /api/users 404 56ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 884,
+        "bad_line": "2025/09/07-22:22:39 POST /api/reviews 500 393ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 895,
+        "bad_line": "2025/09/07-23:22:26 PUT /api/payments 200 458ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 927,
+        "bad_line": "2025/09/07-22:38:48 DELETE /api/payments 200 273ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 945,
+        "bad_line": "2025/09/07-22:39:24 POST /api/products 404 441ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 947,
+        "bad_line": "2025/09/07-23:11:00 PUT /api/payments 502 201ms"
+    },
+    {
+        "file": "logs.log",
+        "line_number": 960,
+        "bad_line": "2025-09-07 23:11:52 PUT /api/users 200 -100ms"
+    }
+]
