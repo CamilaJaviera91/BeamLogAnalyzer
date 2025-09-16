@@ -31,7 +31,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
             if not errors:
                 print(f"✅ {filename}: All lines valid.")
             else:
-                print(f"❌ {filename}: Found {len(errors)} invalid lines")
+                print(f"❌ {filename}: Found {len(errors)} invalid lines.")
 
     csv_path = os.path.join(report_folder, "log_validation_report.csv")
     with open(csv_path, "w", newline="") as csvfile:
