@@ -29,7 +29,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
             all_errors.extend(errors)
 
             if not errors:
-                print(f"✅ {filename}: All lines valid")
+                print(f"✅ {filename}: All lines valid.")
             else:
                 print(f"❌ {filename}: Found {len(errors)} invalid lines")
 
