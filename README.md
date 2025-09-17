@@ -12,3 +12,9 @@
 2025-09-06 12:35:02 GET /api/orders 500 234ms
 2025-09-06 12:35:08 POST /api/cart 404 89ms
 ```
+
+- **Format:**
+
+```
+TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
+```
