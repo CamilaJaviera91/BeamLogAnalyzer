@@ -24,9 +24,9 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     -Parse each line into a dictionary (timestamp, method, endpoint, status_code, response_time).
     
     - Classify status codes: 2xx = success, 4xx = client error, 5xx = server error.
-
-Count requests per minute.
-
-Find the top 3 most requested endpoints.
-
-Calculate the average response_time.
+    
+    - Count requests per minute.
+    
+    - Find the top 3 most requested endpoints.
+    
+    - Calculate the average response_time.
