@@ -21,9 +21,12 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
 - **Pipeline:**
 
-    -Parse each line into a dictionary (timestamp, method, endpoint, status_code, response_time).
+    - Parse each line into a dictionary (timestamp, method, endpoint, status_code, response_time).
     
-    - Classify status codes: 2xx = success, 4xx = client error, 5xx = server error.
+    - Classify status codes: 
+        - 2xx = success 
+        - 4xx = client error 
+        - 5xx = server error
     
     - Count requests per minute.
     
