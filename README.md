@@ -36,3 +36,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     - Calculate the average response_time.
 
 - **Output:**
+
+    - logs_summary.csv → metrics per minute.
+
+    - top_endpoints.csv → endpoint ranking.
