@@ -34,3 +34,5 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     - Find the top 3 most requested endpoints.
     
     - Calculate the average response_time.
+
+- **Output:**
