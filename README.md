@@ -35,7 +35,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     - Metrics & Analysis: 
         - Count **requests per minute**.
         - Find **Top 3 most requested endpoints**.
-        - Calculate the average response_time.
+        - Calculate **average response_time**.
 
 - **Output:**
 
