@@ -28,9 +28,9 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
         - timestamp, method, endpoint, status_code, response_time
     
     - Classify status codes: 
-        - 2xx = success 
-        - 4xx = client error 
-        - 5xx = server error
+        - `2xx` → success 
+        - 4xx → client error 
+        - 5xx → server error
     
     - Count requests per minute.
     
