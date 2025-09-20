@@ -32,7 +32,8 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
         - `4xx` → client error 
         - `5xx` → server error
     
-    - Count requests per minute.
+    - Metrics & Analysis: 
+        - Count requests per minute.
     
     - Find the top 3 most requested endpoints.
     
