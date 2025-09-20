@@ -29,8 +29,8 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     
     - Classify status codes: 
         - `2xx` → success 
-        - 4xx → client error 
-        - 5xx → server error
+        - `4xx` → client error 
+        - `5xx` → server error
     
     - Count requests per minute.
     
