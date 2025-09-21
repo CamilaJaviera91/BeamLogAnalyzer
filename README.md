@@ -14,16 +14,17 @@ It simulates log data, parses it, validates it, and generates meaningful insight
 - ⚠️ The dataset is **not clean** and intentionally contains some **invalid or corrupted log lines**, such as:  
     - Missing fields (e.g., no endpoint or no response time)  
     - Malformed timestamps  
-    - Wrong status codes  
 
 This ensures the pipeline also handles **data quality validation**.
 
 #### Example lines:
 
 ```
-2025-09-06 12:34:56 GET /api/users 200 123ms
-2025-09-06 12:35:02 GET /api/orders 500 234ms
-2025-09-06 12:35:08 POST /api/cart 404 89ms
+2025-09-07 22:08:59 DELETE /api/cart 200 241ms
+2025-09-07 22:08:18 POST /api/payments 200 94ms
+BAD_LOG_LINE
+2025-09-07 22:08:44 POST /api/reviews 200 66ms
+2025/09/07-22:10:23 PUT /api/orders 200 74ms
 ```
 
 - **Format:**
