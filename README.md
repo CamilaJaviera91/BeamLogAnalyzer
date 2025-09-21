@@ -51,6 +51,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
     - `logs_summary.csv` → metrics per minute.
     - `top_endpoints.csv` → endpoint ranking.
+    - `validation_report.csv` → list of invalid log lines with error details
 
 ---
 
