@@ -8,9 +8,17 @@ It simulates log data, parses it, validates it, and generates meaningful insight
 
 ### 🛠️ Pipeline flow
 
-- **Input:** simulated logs in a .log file (you can generate them with Faker or use an Apache/Nginx dataset).
+#### Input: 
 
-- **Example lines:**
+Logs are simulated in a `.log` file (generated with **Faker** or taken from an **Apache/Nginx dataset**).  
+⚠️ The dataset is **not clean** and intentionally contains some **invalid or corrupted log lines**, such as:  
+- Missing fields (e.g., no endpoint or no response time)  
+- Malformed timestamps  
+- Wrong status codes  
+
+This ensures the pipeline also handles **data quality validation**.
+
+#### Example lines:
 
 ```
 2025-09-06 12:34:56 GET /api/users 200 123ms
