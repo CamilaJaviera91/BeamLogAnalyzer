@@ -2,7 +2,7 @@
 ## 📊 Log Analyzer with Apache Beam
 
 This project demonstrates how to process and analyze **web server logs** using **Apache Beam**.  
-It simulates log data, parses it, and generates meaningful insights such as request counts, response times, and top endpoints.  
+It simulates log data, parses it, validates it, and generates meaningful insights such as request counts, response times, and top endpoints.
 
 ---
 
