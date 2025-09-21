@@ -4,6 +4,8 @@
 This project demonstrates how to process and analyze **web server logs** using **Apache Beam**.  
 It simulates log data, parses it, and generates meaningful insights such as request counts, response times, and top endpoints.  
 
+---
+
 ### 🛠️ Pipeline flow
 
 - **Input:** simulated logs in a .log file (you can generate them with Faker or use an Apache/Nginx dataset).
