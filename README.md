@@ -1,4 +1,4 @@
-# Beam Log Analyzer 
+# Beam Log Analyzer
 ## 📊 Log Analyzer with Apache Beam
 
 This project demonstrates how to process and analyze **web server logs** using **Apache Beam**.  
