@@ -36,7 +36,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 - **Pipeline:**
 
     - Parse each line into a dictionary:
-        - `timestamp`, `method`, `endpoint`, status_code, response_time
+        - `timestamp`, `method`, `endpoint`, `status_code`, response_time
     
     - Classify status codes: 
         - `2xx` → success 
