@@ -61,7 +61,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
 - Python 3.11+.
 
-- Apache Beam (batch pipeline)
+- Apache Beam (batch pipeline).
 
 - Faker (for synthetic log generation)
 
