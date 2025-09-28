@@ -63,6 +63,6 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
 - Apache Beam (batch pipeline).
 
-- Faker (for synthetic log generation)
+- Faker (for synthetic log generation).
 
 - CSV output for reporting
