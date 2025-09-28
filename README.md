@@ -59,7 +59,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
 ### 🚀 Tech Stack
 
-- Python 3.11+
+- Python 3.11+.
 
 - Apache Beam (batch pipeline)
 
