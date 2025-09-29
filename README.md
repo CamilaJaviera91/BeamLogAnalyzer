@@ -66,3 +66,5 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 - Faker (for synthetic log generation).
 
 - CSV output for reporting.
+
+---
