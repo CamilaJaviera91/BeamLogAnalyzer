@@ -54,4 +54,4 @@ def generate_logs(num_lines=500):
     print(f"✅ Generate {num_lines} logs at {OUTPUT_FILE}")
 
 if __name__ == "__main__":
-    generate_logs(1000)
+    generate_logs(2000)
