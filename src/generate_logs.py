@@ -55,3 +55,4 @@ def generate_logs(num_lines=500):
 
 if __name__ == "__main__":
     generate_logs(2000)
+    
