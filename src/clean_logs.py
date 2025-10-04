@@ -2,6 +2,7 @@ import re
 from datetime import datetime
 import os
 
+# Define input and output file paths
 INPUT_FILE = "src/data/raw/logs.log"
 OUTPUT_FILE = "src/data/clean/logs_clean.log"
 
