@@ -1,44 +1,89 @@
 file,line_number,bad_line
-logs.log,24,BAD_LOG_LINE
-logs.log,50,2025/09/07-22:10:23 PUT /api/orders 200 74ms
-logs.log,53,2025-09-07 22:12:16 DELETE /api/payments 200 -100ms
-logs.log,103,2025-09-07 22:13:02 PUT /api/payments 403 -100ms
-logs.log,139,BAD_LOG_LINE
-logs.log,175,2025/09/07-22:10:50 PUT  200 179ms
-logs.log,180,2025-09-07 22:13:54 DELETE /api/cart 200 -100ms
-logs.log,209,2025/09/07-22:18:20 GET /api/orders 200 248ms
-logs.log,219,2025/09/07-22:11:34 GET /api/users 200 243ms
-logs.log,227,2025/09/07-22:15:28 GET /api/payments 999 238ms
-logs.log,230,2025/09/07-22:11:45 PUT /api/products 201 198ms
-logs.log,241,2025/09/07-22:19:56 DELETE /api/cart 200 252ms
-logs.log,247,2025/09/07-22:28:26 PUT /api/payments 500 263ms
-logs.log,261,2025/09/07-22:29:36 GET /api/orders 200 146ms
+logs.log,46,2025/10/12-13:45:58 PUT /api/products 200 321ms
+logs.log,49,BAD_LOG_LINE
+logs.log,70,2025-10-12 13:45:16 PUT /api/cart 200 -100ms
+logs.log,74,2025-10-12 13:44:11 DELETE /api/orders 200 -100ms
+logs.log,199,2025-10-12 13:52:52 POST /api/users 403 -100ms
+logs.log,211,BAD_LOG_LINE
+logs.log,221,2025/10/12-14:01:18 POST /api/products 503 411ms
+logs.log,251,2025-10-12 13:51:18 GET /api/products 403 -100ms
+logs.log,258,BAD_LOG_LINE
+logs.log,289,2025-10-12 14:06:58 POST  401 -100ms
+logs.log,301,2025/10/12-13:52:58 PUT /api/cart 200 218ms
+logs.log,315,2025/10/12-13:48:12 DELETE /api/payments 201 158ms
 logs.log,327,BAD_LOG_LINE
-logs.log,336,2025/09/07-22:19:06 POST /api/reviews 200 160ms
-logs.log,365,2025-09-07 22:32:12 PUT /api/orders 200 -100ms
-logs.log,378,2025-09-07 22:33:04 POST /api/users 201 -100ms
-logs.log,402,BAD_LOG_LINE
-logs.log,438,2025-09-07 22:44:21 PUT /api/cart 404 -100ms
-logs.log,468,2025-09-07 22:46:51 GET /api/products 200 -100ms
-logs.log,512,BAD_LOG_LINE
-logs.log,532,2025/09/07-22:25:38 DELETE /api/products 400 410ms
-logs.log,548,BAD_LOG_LINE
-logs.log,610,2025/09/07-22:38:23 GET /api/users 404 99999ms
-logs.log,639,2025-09-07 22:29:12 POST /api/orders 200 -100ms
-logs.log,689,BAD_LOG_LINE
-logs.log,715,2025-09-07 22:31:44 POST /api/payments 200 -100ms
-logs.log,723,BAD_LOG_LINE
-logs.log,792,2025-09-07 22:47:29 GET /api/orders 403 -100ms
-logs.log,807,BAD_LOG_LINE
-logs.log,830,2025-09-07 22:21:45 POST /api/reviews 200 -100ms
-logs.log,836,2025-09-07 23:17:31 DELETE /api/reviews 200 -100ms
-logs.log,839,BAD_LOG_LINE
-logs.log,840,2025/09/07-22:35:54 POST /api/reviews 403 229ms
-logs.log,863,2025/09/07-22:36:40 PUT  401 99ms
-logs.log,883,2025/09/07-22:52:02 GET /api/users 404 56ms
-logs.log,884,2025/09/07-22:22:39 POST /api/reviews 500 393ms
-logs.log,895,2025/09/07-23:22:26 PUT /api/payments 200 458ms
-logs.log,927,2025/09/07-22:38:48 DELETE /api/payments 200 273ms
-logs.log,945,2025/09/07-22:39:24 POST /api/products 404 441ms
-logs.log,947,2025/09/07-23:11:00 PUT /api/payments 502 201ms
-logs.log,960,2025-09-07 23:11:52 PUT /api/users 200 -100ms
+logs.log,343,2025/10/12-13:54:22 DELETE /api/users 999 323ms
+logs.log,358,2025-10-12 14:00:49 DELETE /api/reviews 200 -100ms
+logs.log,365,2025/10/12-14:01:10 PUT /api/payments 200 343ms
+logs.log,371,2025/10/12-14:13:48 DELETE /api/payments 200 224ms
+logs.log,411,2025/10/12-13:49:48 PUT /api/products 503 306ms
+logs.log,416,2025-10-12 13:56:48 PUT /api/products 400 -100ms
+logs.log,428,2025/10/12-13:50:05 DELETE /api/products 200 97ms
+logs.log,479,2025/10/12-14:14:50 POST /api/cart 201 206ms
+logs.log,489,2025/10/12-14:15:30 PUT /api/products 404 392ms
+logs.log,559,BAD_LOG_LINE
+logs.log,562,2025/10/12-14:11:01 PUT /api/orders 404 383ms
+logs.log,581,2025-10-12 14:02:18 DELETE /api/reviews 200 -100ms
+logs.log,593,BAD_LOG_LINE
+logs.log,624,2025-10-12 13:53:21 PUT /api/products 200 -100ms
+logs.log,637,BAD_LOG_LINE
+logs.log,688,2025/10/12-13:54:25 POST /api/payments 200 375ms
+logs.log,698,2025/10/12-14:06:12 POST /api/reviews 201 294ms
+logs.log,716,2025/10/12-14:42:33 POST /api/products 200 131ms
+logs.log,729,2025/10/12-14:19:22 POST /api/reviews 403 329ms
+logs.log,760,2025-10-12 13:55:37 PUT /api/users 999 -100ms
+logs.log,768,2025/10/12-13:55:45 DELETE /api/orders 500 72ms
+logs.log,771,BAD_LOG_LINE
+logs.log,799,BAD_LOG_LINE
+logs.log,821,2025/10/12-14:23:58 GET /api/payments 200 126ms
+logs.log,854,2025/10/12-14:25:37 POST /api/payments 200 499ms
+logs.log,891,2025-10-12 14:12:38 PUT /api/payments 200 -100ms
+logs.log,915,2025-10-12 13:58:12 PUT /api/cart 200 -100ms
+logs.log,940,2025-10-12 14:45:34 PUT /api/orders 200 -100ms
+logs.log,944,2025/10/12-14:45:50 PUT /api/reviews 400 99999ms
+logs.log,949,2025-10-12 14:30:22 POST /api/payments 200 -100ms
+logs.log,957,BAD_LOG_LINE
+logs.log,1006,2025/10/12-13:59:43 POST /api/users 404 223ms
+logs.log,1008,2025/10/12-13:59:45 PUT /api/users 200 103ms
+logs.log,1030,2025-10-12 14:51:34 POST /api/users 500 -100ms
+logs.log,1051,2025/10/12-14:00:28 POST /api/orders 200 319ms
+logs.log,1089,2025/10/12-15:13:38 POST /api/cart 404 280ms
+logs.log,1091,2025-10-12 15:13:48 POST /api/products 200 -100ms
+logs.log,1106,2025-10-12 14:01:23 PUT /api/users 999 -100ms
+logs.log,1151,2025/10/12-14:40:28 POST /api/products 200 145ms
+logs.log,1207,BAD_LOG_LINE
+logs.log,1298,2025/10/12-15:31:03 GET /api/reviews 404 427ms
+logs.log,1341,2025-10-12 15:34:38 POST /api/products 401 -100ms
+logs.log,1346,2025-10-12 14:27:48 GET /api/users 200 -100ms
+logs.log,1368,2025/10/12-14:51:19 GET /api/payments 200 185ms
+logs.log,1446,2025-10-12 15:43:23 POST /api/users 999 -100ms
+logs.log,1471,2025-10-12 14:56:28 POST /api/reviews 404 -100ms
+logs.log,1487,BAD_LOG_LINE
+logs.log,1512,2025/10/12-14:33:20 PUT /api/payments 200 282ms
+logs.log,1517,2025/10/12-15:49:18 GET /api/payments 200 359ms
+logs.log,1521,2025/10/12-14:33:38 DELETE /api/cart 200 443ms
+logs.log,1557,2025-10-12 14:34:50 GET /api/users 400 -100ms
+logs.log,1574,2025/10/12-15:27:50 GET /api/users 404 144ms
+logs.log,1576,2025-10-12 15:01:43 GET /api/reviews 200 -100ms
+logs.log,1577,2025/10/12-14:35:30 PUT /api/products 999 255ms
+logs.log,1611,2025/10/12-15:57:08 PUT /api/users 404 117ms
+logs.log,1660,BAD_LOG_LINE
+logs.log,1685,2025/10/12-15:07:10 GET /api/cart 200 350ms
+logs.log,1703,BAD_LOG_LINE
+logs.log,1722,2025/10/12-16:06:23 PUT /api/orders 200 92ms
+logs.log,1755,2025/10/12-14:41:26 GET /api/products 200 70ms
+logs.log,1759,2025/10/12-15:40:10 DELETE /api/products 400 293ms
+logs.log,1760,2025-10-12 15:10:55 PUT /api/cart 404 -100ms
+logs.log,1795,2025/10/12-16:12:28 POST /api/users 200 392ms
+logs.log,1813,2025/10/12-15:13:34 PUT /api/products 403 59ms
+logs.log,1826,2025-10-12 15:44:38 POST /api/users 200 -100ms
+logs.log,1843,2025/10/12-15:45:46 PUT /api/orders 503 395ms
+logs.log,1863,2025/10/12-15:16:04 GET /api/users 200 92ms
+logs.log,1864,2025/10/12-15:16:07 GET /api/users 200 471ms
+logs.log,1874,2025/10/12-15:16:37 GET /api/orders 200 370ms
+logs.log,1880,2025/10/12-16:19:33 PUT /api/payments 200 223ms
+logs.log,1897,2025/10/12-15:17:46 DELETE /api/cart 404 328ms
+logs.log,1924,2025/10/12-15:19:07 DELETE /api/payments 200 163ms
+logs.log,1944,2025-10-12 14:15:21 PUT /api/products 200 -100ms
+logs.log,1949,BAD_LOG_LINE
+logs.log,1966,BAD_LOG_LINE
