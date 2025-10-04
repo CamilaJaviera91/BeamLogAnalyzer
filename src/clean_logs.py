@@ -6,6 +6,12 @@ import os
 INPUT_FILE = "src/data/raw/logs.log"
 OUTPUT_FILE = "src/data/clean/logs_clean.log"
 
+# Regular expression to match log lines with the following pattern:
+#   1. Timestamp (supports YYYY-MM-DD HH:MM:SS or YYYY/MM/DD-HH:MM:SS)
+#   2. HTTP method (e.g., GET, POST)
+#   3. Endpoint (e.g., /api/users)
+#   4. Status code (e.g., 200)
+#   5. Response time in milliseconds (e.g., 123ms)
 LOG_PATTERN = re.compile(r'(\d{4}[-/]\d{2}[-/]\d{2}[ T-]\d{2}:\d{2}:\d{2}) (\w+) (\S+) (\d{3}) (\d+)ms')
 
 def clean_logs(input_file, output_file):
