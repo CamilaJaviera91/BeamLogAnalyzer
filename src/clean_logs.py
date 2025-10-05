@@ -53,6 +53,7 @@ def clean_logs(input_file, output_file):
             # Write the cleaned and standardized log line to output file
             out.write(f"{timestamp} {method} {endpoint} {status} {response_time}ms\n")
 
+# Run the cleaning function if executed as a script
 if __name__ == "__main__":
     clean_logs(INPUT_FILE, OUTPUT_FILE)
     print(f"✅ Cleaned logs saved to {OUTPUT_FILE}")
