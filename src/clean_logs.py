@@ -15,6 +15,13 @@ OUTPUT_FILE = "src/data/clean/logs_clean.log"
 LOG_PATTERN = re.compile(r'(\d{4}[-/]\d{2}[-/]\d{2}[ T-]\d{2}:\d{2}:\d{2}) (\w+) (\S+) (\d{3}) (\d+)ms')
 
 def clean_logs(input_file, output_file):
+    """
+    Cleans raw log data by:
+      - Filtering only valid log lines matching the defined pattern.
+      - Normalizing timestamps into a consistent format (YYYY-MM-DD HH:MM:SS).
+      - Writing cleaned lines into a new output file.
+    """
+    # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     with open(input_file, "r") as f, open(output_file, "w") as out:
