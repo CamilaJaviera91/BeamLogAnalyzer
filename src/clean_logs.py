@@ -31,6 +31,7 @@ def clean_logs(input_file, output_file):
             # Try to match the log line against the regex pattern
             match = LOG_PATTERN.match(line.strip())
             if not match:
+                # Skip lines that don't follow the expected format
                 continue
             
             raw_time, method, endpoint, status, response_time = match.groups()
