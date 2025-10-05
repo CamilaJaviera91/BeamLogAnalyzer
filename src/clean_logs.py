@@ -47,6 +47,7 @@ def clean_logs(input_file, output_file):
                     dt = datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
                 timestamp = dt.strftime("%Y-%m-%d %H:%M:%S")
             except ValueError:
+                # Skip lines with invalid date formats
                 continue
             
             out.write(f"{timestamp} {method} {endpoint} {status} {response_time}ms\n")
