@@ -43,6 +43,7 @@ def clean_logs(input_file, output_file):
                     # Handle format like 'YYYY/MM/DD-HH:MM:SS'
                     dt = datetime.strptime(raw_time, "%Y/%m/%d-%H:%M:%S")
                 else:
+                    # Handle format like 'YYYY-MM-DD HH:MM:SS'
                     dt = datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
                 timestamp = dt.strftime("%Y-%m-%d %H:%M:%S")
             except ValueError:
