@@ -23,7 +23,8 @@ def clean_logs(input_file, output_file):
     """
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
-
+    
+    # Open both input and output files
     with open(input_file, "r") as f, open(output_file, "w") as out:
         for line in f:
             match = LOG_PATTERN.match(line.strip())
