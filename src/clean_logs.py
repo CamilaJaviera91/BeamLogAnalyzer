@@ -50,6 +50,7 @@ def clean_logs(input_file, output_file):
                 # Skip lines with invalid date formats
                 continue
             
+            # Write the cleaned and standardized log line to output file
             out.write(f"{timestamp} {method} {endpoint} {status} {response_time}ms\n")
 
 if __name__ == "__main__":
