@@ -38,6 +38,7 @@ def clean_logs(input_file, output_file):
             raw_time, method, endpoint, status, response_time = match.groups()
 
             try:
+                # Normalize timestamp to a consistent format
                 if "/" in raw_time:
                     dt = datetime.strptime(raw_time, "%Y/%m/%d-%H:%M:%S")
                 else:
