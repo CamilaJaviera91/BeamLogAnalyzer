@@ -40,6 +40,7 @@ def clean_logs(input_file, output_file):
             try:
                 # Normalize timestamp to a consistent format
                 if "/" in raw_time:
+                    # Handle format like 'YYYY/MM/DD-HH:MM:SS'
                     dt = datetime.strptime(raw_time, "%Y/%m/%d-%H:%M:%S")
                 else:
                     dt = datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
