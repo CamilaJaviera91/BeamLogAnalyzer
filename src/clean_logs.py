@@ -28,6 +28,7 @@ def clean_logs(input_file, output_file):
     with open(input_file, "r") as f, open(output_file, "w") as out:
         # Process each line in the input file
         for line in f:
+            # Try to match the log line against the regex pattern
             match = LOG_PATTERN.match(line.strip())
             if not match:
                 continue
