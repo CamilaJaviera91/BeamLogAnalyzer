@@ -34,6 +34,7 @@ def clean_logs(input_file, output_file):
                 # Skip lines that don't follow the expected format
                 continue
             
+            # Extract the matched log components
             raw_time, method, endpoint, status, response_time = match.groups()
 
             try:
