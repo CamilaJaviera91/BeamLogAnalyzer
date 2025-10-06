@@ -3,6 +3,7 @@ from datetime import datetime, timedelta
 from faker import Faker
 import os 
 
+# Initialize the Faker library to generate fake data if needed
 fake = Faker()
 
 OUTPUT_DIR = "src/data/raw"
