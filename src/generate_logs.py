@@ -6,6 +6,7 @@ import os
 # Initialize the Faker library to generate fake data if needed
 fake = Faker()
 
+# Define output directory and file paths
 OUTPUT_DIR = "src/data/raw"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "logs.log")
 
