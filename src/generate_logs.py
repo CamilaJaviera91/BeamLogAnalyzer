@@ -18,6 +18,7 @@ ENDPOINTS = ["/api/users",
              "/api/payments",
              "/api/reviews"]
 
+# Possible HTTP methods
 METHODS = ["GET", "POST", "PUT", "DELETE"]
 
 STATUS_CODES = [200, 201, 400, 401, 403, 404, 500, 502, 503]
