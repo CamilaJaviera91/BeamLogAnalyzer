@@ -10,6 +10,7 @@ fake = Faker()
 OUTPUT_DIR = "src/data/raw"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "logs.log")
 
+# Possible API endpoints that simulate a web application's routes
 ENDPOINTS = ["/api/users",
              "/api/orders",
              "/api/products",
