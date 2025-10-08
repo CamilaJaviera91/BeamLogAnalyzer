@@ -30,6 +30,7 @@ def generate_log_line(base_time):
     """
     # Format timestamp as a readable string
     timestamp = base_time.strftime('%Y-%m-%d %H:%M:%S')
+    # Randomly pick a method, endpoint, and weighted status code
     method = random.choice(METHODS)
     endpoint = random.choice(ENDPOINTS)
     status = random.choices(STATUS_CODES, weights=STATUS_WEIGHTS, k=1)[0]
