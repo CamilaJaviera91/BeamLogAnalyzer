@@ -34,6 +34,7 @@ def generate_log_line(base_time):
     method = random.choice(METHODS)
     endpoint = random.choice(ENDPOINTS)
     status = random.choices(STATUS_CODES, weights=STATUS_WEIGHTS, k=1)[0]
+    # Simulate a random response time in milliseconds
     response_time = random.randint(50, 500)
 
     if random.random() < 0.05:
