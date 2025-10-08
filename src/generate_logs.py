@@ -28,6 +28,7 @@ def generate_log_line(base_time):
     """
     Generates a single simulated log line with possible data irregularities.
     """
+    # Format timestamp as a readable string
     timestamp = base_time.strftime('%Y-%m-%d %H:%M:%S')
     method = random.choice(METHODS)
     endpoint = random.choice(ENDPOINTS)
