@@ -39,7 +39,7 @@ def generate_log_line(base_time):
 
     # Introduce random noise or errors to simulate dirty data
     if random.random() < 0.05:
-        endpoint = ""
+        endpoint = "" # Missing endpoint
     if random.random() < 0.05:
         status = 999
     if random.random() < 0.03:
