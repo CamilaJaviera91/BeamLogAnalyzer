@@ -43,7 +43,7 @@ def generate_log_line(base_time):
     if random.random() < 0.05:
         status = 999 # Invalid status code
     if random.random() < 0.03:
-        response_time = random.choice([-100, 99999])
+        response_time = random.choice([-100, 99999]) # Out-of-range response times
     if random.random() < 0.02:
         timestamp = base_time.strftime("%Y/%m/%d-%H:%M:%S")
     if random.random() < 0.01:
