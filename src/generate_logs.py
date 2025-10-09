@@ -48,7 +48,8 @@ def generate_log_line(base_time):
         timestamp = base_time.strftime("%Y/%m/%d-%H:%M:%S") # Non-standard timestamp format
     if random.random() < 0.01:
         return "BAD_LOG_LINE" # Corrupted line
-
+    
+    # Construct a valid log line
     return f"{timestamp} {method} {endpoint} {status} {response_time}ms"
 
 def generate_logs(num_lines=500):
