@@ -41,7 +41,7 @@ def generate_log_line(base_time):
     if random.random() < 0.05:
         endpoint = "" # Missing endpoint
     if random.random() < 0.05:
-        status = 999
+        status = 999 # Invalid status code
     if random.random() < 0.03:
         response_time = random.choice([-100, 99999])
     if random.random() < 0.02:
