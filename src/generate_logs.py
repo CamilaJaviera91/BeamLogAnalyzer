@@ -37,6 +37,7 @@ def generate_log_line(base_time):
     # Simulate a random response time in milliseconds
     response_time = random.randint(50, 500)
 
+    # Introduce random noise or errors to simulate dirty data
     if random.random() < 0.05:
         endpoint = ""
     if random.random() < 0.05:
