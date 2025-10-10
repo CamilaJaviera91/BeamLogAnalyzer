@@ -63,6 +63,7 @@ def generate_logs(num_lines=500):
     # Base time used to increment timestamps
     base_time = datetime.now()
 
+    # Open the log file and start writing simulated log lines
     with open(OUTPUT_FILE, "w") as f:
         for i in range(num_lines):
             log_time = base_time + timedelta(seconds=i * random.randint(1, 5))
