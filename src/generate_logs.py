@@ -69,7 +69,8 @@ def generate_logs(num_lines=500):
             # Increment time by a few seconds randomly to simulate real logs
             log_time = base_time + timedelta(seconds=i * random.randint(1, 5))
             f.write(generate_log_line(log_time) + "\n")
-    
+            
+    # Confirmation message
     print(f"✅ Generate {num_lines} logs at {OUTPUT_FILE}")
 
 if __name__ == "__main__":
