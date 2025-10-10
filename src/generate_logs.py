@@ -53,6 +53,9 @@ def generate_log_line(base_time):
     return f"{timestamp} {method} {endpoint} {status} {response_time}ms"
 
 def generate_logs(num_lines=500):
+    """
+    Generates multiple log lines and writes them to a file.
+    """
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     
