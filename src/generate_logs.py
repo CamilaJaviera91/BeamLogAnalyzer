@@ -60,6 +60,7 @@ def generate_logs(num_lines=500):
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     
+    # Base time used to increment timestamps
     base_time = datetime.now()
 
     with open(OUTPUT_FILE, "w") as f:
