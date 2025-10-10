@@ -56,6 +56,7 @@ def generate_logs(num_lines=500):
     """
     Generates multiple log lines and writes them to a file.
     """
+    # Ensure the output directory exists
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     
