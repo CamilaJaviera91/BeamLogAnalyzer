@@ -28,6 +28,7 @@ def validate_log_file(filepath):
     # Open the file and read line by line
     with open(filepath, "r") as f:
         for i, line in enumerate(f, start=1):
+            # Check if the current line matches the expected log pattern
             if not LOG_PATTERN.match(line.strip()):
                 errors.append({
                     "file": os.path.basename(filepath),
