@@ -25,6 +25,7 @@ def validate_log_file(filepath):
         list[dict]: A list of dictionaries containing details about invalid lines.
     """
     errors = []
+    # Open the file and read line by line
     with open(filepath, "r") as f:
         for i, line in enumerate(f, start=1):
             if not LOG_PATTERN.match(line.strip()):
