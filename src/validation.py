@@ -47,7 +47,8 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
         report_folder (str): Directory to save the validation reports.
     """
     all_errors = []
-
+    
+    # Ensure that the output directory exists
     os.makedirs(report_folder, exist_ok=True)
 
     for filename in os.listdir(folder):
