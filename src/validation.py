@@ -15,6 +15,15 @@ import json
 LOG_PATTERN = re.compile(r'(\S+ \S+) (\S+) (\S*) (\d{3}) (\d+)ms')
 
 def validate_log_file(filepath):
+    """
+    Validate a single log file line by line.
+    
+    Args:
+        filepath (str): Path to the log file to be validated.
+    
+    Returns:
+        list[dict]: A list of dictionaries containing details about invalid lines.
+    """
     errors = []
     with open(filepath, "r") as f:
         for i, line in enumerate(f, start=1):
