@@ -65,6 +65,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
             else:
                 print(f"❌ {filename}: Found {len(errors)} invalid lines.")
 
+    # --- Save results to CSV file ---
     csv_path = os.path.join(report_folder, "log_validation_report.csv")
     with open(csv_path, "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=["file", "line_number", "bad_line"])
