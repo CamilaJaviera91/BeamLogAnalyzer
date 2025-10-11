@@ -3,6 +3,7 @@ import re
 import csv
 import json
 
+# Regular expression pattern to validate each log line.
 LOG_PATTERN = re.compile(r'(\S+ \S+) (\S+) (\S*) (\d{3}) (\d+)ms')
 
 def validate_log_file(filepath):
