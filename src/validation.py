@@ -6,6 +6,12 @@ import json
 # Regular expression pattern to validate each log line.
 # Expected format example:
 # "2025-10-12 14:33:45 GET /api/users 200 123ms"
+# Groups:
+#   1. Timestamp (date and time)
+#   2. HTTP method
+#   3. Endpoint (optional)
+#   4. HTTP status code (3 digits)
+#   5. Response time (in milliseconds)
 LOG_PATTERN = re.compile(r'(\S+ \S+) (\S+) (\S*) (\d{3}) (\d+)ms')
 
 def validate_log_file(filepath):
