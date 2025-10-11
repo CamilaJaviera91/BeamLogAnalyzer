@@ -51,6 +51,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
     # Ensure that the output directory exists
     os.makedirs(report_folder, exist_ok=True)
 
+    # Iterate over all files in the input folder
     for filename in os.listdir(folder):
         if filename.endswith(".log"):
             filepath = os.path.join(folder, filename)
