@@ -30,6 +30,7 @@ def validate_log_file(filepath):
         for i, line in enumerate(f, start=1):
             # Check if the current line matches the expected log pattern
             if not LOG_PATTERN.match(line.strip()):
+                # If not, store details about the invalid line
                 errors.append({
                     "file": os.path.basename(filepath),
                     "line_number": i,
