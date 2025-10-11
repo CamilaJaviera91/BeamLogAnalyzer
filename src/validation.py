@@ -76,6 +76,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
     with open(json_path, "w") as jsonfile:
         json.dump(all_errors, jsonfile, indent=4)
 
+    # Summary message with report paths
     print(f"\n📄 Report saved in:\n   - {csv_path}\n   - {json_path}")
 
 if __name__ == "__main__":
