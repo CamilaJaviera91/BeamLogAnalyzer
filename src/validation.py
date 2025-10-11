@@ -59,6 +59,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
             errors = validate_log_file(filepath)
             all_errors.extend(errors)
 
+            # Print feedback depending on validation result
             if not errors:
                 print(f"✅ {filename}: All lines valid.")
             else:
