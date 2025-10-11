@@ -4,6 +4,8 @@ import csv
 import json
 
 # Regular expression pattern to validate each log line.
+# Expected format example:
+# "2025-10-12 14:33:45 GET /api/users 200 123ms"
 LOG_PATTERN = re.compile(r'(\S+ \S+) (\S+) (\S*) (\d{3}) (\d+)ms')
 
 def validate_log_file(filepath):
