@@ -39,6 +39,13 @@ def validate_log_file(filepath):
     return errors
 
 def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/validation"):
+    """
+    Validate all .log files in a given folder and generate CSV and JSON reports.
+    
+    Args:
+        folder (str): Directory containing the raw log files.
+        report_folder (str): Directory to save the validation reports.
+    """
     all_errors = []
 
     os.makedirs(report_folder, exist_ok=True)
