@@ -80,4 +80,5 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
     print(f"\n📄 Report saved in:\n   - {csv_path}\n   - {json_path}")
 
 if __name__ == "__main__":
+    # Run the validation process for the default directories
     validate_logs_in_folder("src/data/raw", "src/data/validation")
