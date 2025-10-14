@@ -4,8 +4,9 @@ import os
 import logging
 
 # Define input and output file paths
-INPUT_FILE = "src/data/raw/logs.log"
+INPUT_FILE  = "src/data/raw/logs.log"
 OUTPUT_FILE = "src/data/clean/logs_clean.log"
+LOG_FILE    = "src/data/clean/clean_logs_report.log"
 
 # Regular expression to match log lines with the following pattern:
 #   1. Timestamp (supports YYYY-MM-DD HH:MM:SS or YYYY/MM/DD-HH:MM:SS)
