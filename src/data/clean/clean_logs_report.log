@@ -3,3 +3,8 @@
 2025-10-13 23:01:39,353 [WARNING] ⚠️ Skipped lines (invalid format): 0
 2025-10-13 23:01:39,353 [WARNING] 🕒 Timestamp parsing errors: 0
 2025-10-13 23:01:39,353 [INFO] Cleaned logs saved to src/data/clean/logs_clean.log
+2025-10-13 23:04:34,349 [INFO] Total lines processed: 2000
+2025-10-13 23:04:34,349 [INFO] ✅ Cleaned lines: 1856
+2025-10-13 23:04:34,349 [WARNING] ⚠️ Skipped lines (invalid format): 144
+2025-10-13 23:04:34,349 [WARNING] 🕒 Timestamp parsing errors: 0
+2025-10-13 23:04:34,349 [INFO] Cleaned logs saved to src/data/clean/logs_clean.log
