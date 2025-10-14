@@ -2,6 +2,7 @@ import os
 import re
 import csv
 import json
+from typing import List, Dict
 
 # Regular expression pattern to validate each log line.
 # Expected format example:
