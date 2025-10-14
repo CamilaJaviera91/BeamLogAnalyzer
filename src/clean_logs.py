@@ -16,6 +16,17 @@ LOG_FILE    = "src/data/clean/clean_logs_report.log"
 #   5. Response time in milliseconds (e.g., 123ms)
 LOG_PATTERN = re.compile(r'(\d{4}[-/]\d{2}[-/]\d{2}[ T-]\d{2}:\d{2}:\d{2}) (\w+) (\S+) (\d{3}) (\d+)ms')
 
+# Configure logger
+os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(LOG_FILE),
+        logging.StreamHandler()
+    ]
+)
+
 def clean_logs(input_file, output_file):
     """
     Cleans raw log data by:
