@@ -15,7 +15,7 @@ from typing import List, Dict
 #   5. Response time (in milliseconds)
 LOG_PATTERN = re.compile(r'(\S+ \S+) (\S+) (\S*) (\d{3}) (\d+)ms')
 
-def validate_log_file(filepath):
+def validate_log_file(filepath: str) -> List[Dict[str, str]]:
     """
     Validate a single log file line by line.
     
@@ -23,9 +23,9 @@ def validate_log_file(filepath):
         filepath (str): Path to the log file to be validated.
     
     Returns:
-        list[dict]: A list of dictionaries containing details about invalid lines.
+        List[Dict[str, str]]: A list of dictionaries containing details about invalid lines.
     """
-    errors = []
+    errors: List[Dict[str, str]] = []
     # Open the file and read line by line
     with open(filepath, "r") as f:
         for i, line in enumerate(f, start=1):
@@ -34,7 +34,7 @@ def validate_log_file(filepath):
                 # If not, store details about the invalid line
                 errors.append({
                     "file": os.path.basename(filepath),
-                    "line_number": i,
+                    "line_number": str(i),
                     "bad_line": line.strip()
                 })
     return errors
