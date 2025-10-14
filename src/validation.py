@@ -39,7 +39,7 @@ def validate_log_file(filepath: str) -> List[Dict[str, str]]:
                 })
     return errors
 
-def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/validation"):
+def validate_logs_in_folder(folder: str = "src/data/raw", report_folder: str = "src/data/validation") -> None:
     """
     Validate all .log files in a given folder and generate CSV and JSON reports.
     
@@ -47,8 +47,8 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
         folder (str): Directory containing the raw log files.
         report_folder (str): Directory to save the validation reports.
     """
-    all_errors = []
-    
+    all_errors: List[Dict[str, str]] = []
+
     # Ensure that the output directory exists
     os.makedirs(report_folder, exist_ok=True)
 
@@ -73,6 +73,7 @@ def validate_logs_in_folder(folder="src/data/raw", report_folder="src/data/valid
         writer.writeheader()
         writer.writerows(all_errors)
 
+    # --- Save results to JSON file ---
     json_path = os.path.join(report_folder, "log_validation_report.json")
     with open(json_path, "w") as jsonfile:
         json.dump(all_errors, jsonfile, indent=4)
