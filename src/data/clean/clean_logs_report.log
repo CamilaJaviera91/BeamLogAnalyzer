@@ -1,0 +1,5 @@
+2025-10-13 23:01:39,353 [INFO] Total lines processed: 0
+2025-10-13 23:01:39,353 [INFO] ✅ Cleaned lines: 0
+2025-10-13 23:01:39,353 [WARNING] ⚠️ Skipped lines (invalid format): 0
+2025-10-13 23:01:39,353 [WARNING] 🕒 Timestamp parsing errors: 0
+2025-10-13 23:01:39,353 [INFO] Cleaned logs saved to src/data/clean/logs_clean.log
