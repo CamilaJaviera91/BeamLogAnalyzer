@@ -70,6 +70,13 @@ def clean_logs(input_file, output_file):
             
             # Write the cleaned and standardized log line to output file
             out.write(f"{timestamp} {method} {endpoint} {status} {response_time}ms\n")
+        
+    # Log final summary
+    logging.info(f"Total lines processed: {total_lines}")
+    logging.info(f"✅ Cleaned lines: {cleaned_lines}")
+    logging.warning(f"⚠️ Skipped lines (invalid format): {skipped_lines}")
+    logging.warning(f"🕒 Timestamp parsing errors: {timestamp_errors}")
+    logging.info(f"Cleaned logs saved to {output_file}")
 
 # Run the cleaning function if executed as a script
 if __name__ == "__main__":
