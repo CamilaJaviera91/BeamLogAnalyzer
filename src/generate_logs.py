@@ -11,12 +11,8 @@ OUTPUT_DIR = "src/data/raw"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "logs.log")
 
 # Possible API endpoints that simulate a web application's routes
-ENDPOINTS = ["/api/users",
-             "/api/orders",
-             "/api/products",
-             "/api/cart",
-             "/api/payments",
-             "/api/reviews"]
+ENDPOINTS = ["/api/users", "/api/orders", "/api/products",
+             "/api/cart", "/api/payments", "/api/reviews"]
 
 # Possible HTTP methods
 METHODS = ["GET", "POST", "PUT", "DELETE"]
@@ -38,16 +34,11 @@ def generate_log_line(base_time):
     response_time = random.randint(50, 500)
 
     # Introduce random noise or errors to simulate dirty data
-    if random.random() < 0.05:
-        endpoint = "" # Missing endpoint
-    if random.random() < 0.05:
-        status = 999 # Invalid status code
-    if random.random() < 0.03:
-        response_time = random.choice([-100, 99999]) # Out-of-range response times
-    if random.random() < 0.02:
-        timestamp = base_time.strftime("%Y/%m/%d-%H:%M:%S") # Non-standard timestamp format
-    if random.random() < 0.01:
-        return "BAD_LOG_LINE" # Corrupted line
+    if random.random() < 0.05: endpoint = "" # Missing endpoint
+    if random.random() < 0.05: status = 999 # Invalid status code
+    if random.random() < 0.03: response_time = random.choice([-100, 99999]) # Out-of-range response times
+    if random.random() < 0.02: timestamp = base_time.strftime("%Y/%m/%d-%H:%M:%S") # Non-standard timestamp format
+    if random.random() < 0.01: return "BAD_LOG_LINE" # Corrupted line
     
     # Construct a valid log line
     return f"{timestamp} {method} {endpoint} {status} {response_time}ms"
