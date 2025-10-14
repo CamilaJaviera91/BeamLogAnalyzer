@@ -46,10 +46,12 @@ def clean_logs(input_file, output_file):
     with open(input_file, "r") as f, open(output_file, "w") as out:
         # Process each line in the input file
         for line in f:
+            total_lines += 1
             # Try to match the log line against the regex pattern
             match = LOG_PATTERN.match(line.strip())
             if not match:
                 # Skip lines that don't follow the expected format
+                skipped_lines += 1
                 continue
             
             # Extract the matched log components
@@ -65,11 +67,13 @@ def clean_logs(input_file, output_file):
                     dt = datetime.strptime(raw_time, "%Y-%m-%d %H:%M:%S")
                 timestamp = dt.strftime("%Y-%m-%d %H:%M:%S")
             except ValueError:
+                timestamp_errors += 1
                 # Skip lines with invalid date formats
                 continue
             
-            # Write the cleaned and standardized log line to output file
+            # Write the cleaned log line
             out.write(f"{timestamp} {method} {endpoint} {status} {response_time}ms\n")
+            cleaned_lines += 1
         
     # Log final summary
     logging.info(f"Total lines processed: {total_lines}")
