@@ -33,9 +33,14 @@ def clean_logs(input_file, output_file):
       - Filtering only valid log lines matching the defined pattern.
       - Normalizing timestamps into a consistent format (YYYY-MM-DD HH:MM:SS).
       - Writing cleaned lines into a new output file.
+      - Logging statistics of the cleaning process.
     """
-    # Ensure the output directory exists
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
+
+    total_lines = 0
+    cleaned_lines = 0
+    skipped_lines = 0
+    timestamp_errors = 0
     
     # Open both input and output files
     with open(input_file, "r") as f, open(output_file, "w") as out:
