@@ -1,6 +1,7 @@
 import re
 from datetime import datetime
 import os
+import logging
 
 # Define input and output file paths
 INPUT_FILE = "src/data/raw/logs.log"
