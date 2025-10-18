@@ -9,6 +9,8 @@ It simulates log data, parses it, validates it, and generates meaningful insight
 
 ### 🚀 Features
 
+- Simulates or ingests log lines in format:
+
 ---
 
 ### 🛠️ Pipeline flow
