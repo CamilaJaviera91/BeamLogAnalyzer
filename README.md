@@ -18,6 +18,10 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
     - Average response time  
     - Top N most requested endpoints  
     - Outputs reports in CSV and JSON formats:
+        - `logs_summary.csv` → per-minute metrics  
+        - `top_endpoints.csv` → ranking of endpoints  
+        - `log_validation_report.csv` / `.json` → list of invalid log lines with details  
+
 ---
 
 ### 🛠️ Pipeline flow
