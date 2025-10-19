@@ -17,7 +17,7 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
     - Requests per minute  
     - Average response time  
     - Top N most requested endpoints  
-
+    - Outputs reports in CSV and JSON formats:
 ---
 
 ### 🛠️ Pipeline flow
