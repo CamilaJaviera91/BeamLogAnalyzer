@@ -24,6 +24,10 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
 
 ---
 
+### 🧪 Tech Stack
+
+---
+
 ### 🛠️ Pipeline flow
 
 #### Input: 
