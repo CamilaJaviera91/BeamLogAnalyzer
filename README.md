@@ -27,6 +27,9 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
 ### 🧪 Tech Stack
 
 - Python (>= 3.11)  
+- Apache Beam (batch mode)  
+- Faker (for synthetic log generation)  
+- CSV / JSON for report output  
 
 ---
 
