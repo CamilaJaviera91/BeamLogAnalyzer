@@ -26,6 +26,8 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
 
 ### 🧪 Tech Stack
 
+- Python (>= 3.11)  
+
 ---
 
 ### 🛠️ Pipeline flow
