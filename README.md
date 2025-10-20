@@ -33,6 +33,10 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
 
 ---
 
+### 📁 Repository Structure
+
+---
+
 ### 🛠️ Pipeline flow
 
 #### Input: 
