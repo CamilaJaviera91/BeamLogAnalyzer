@@ -113,4 +113,6 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 - You can customize the log pattern (in LOG_PATTERN) if your log format differs.
 - Adjust the window or aggregation logic in Apache Beam if you want e.g., sliding windows, hourly metrics, etc.
 - Modify the thresholds or top-N value for endpoint ranking.
+- Extend output formats (e.g., Parquet, BigQuery) or integrate with a streaming runner if needed.
+
 ---
