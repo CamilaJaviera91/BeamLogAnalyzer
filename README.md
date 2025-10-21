@@ -110,4 +110,6 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
 ### 🧩 Usage & Customization
 
+- You can customize the log pattern (in LOG_PATTERN) if your log format differs.
+
 ---
