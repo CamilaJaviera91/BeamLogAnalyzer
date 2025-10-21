@@ -38,7 +38,6 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
 ```
 .
 └── src
-    ├── clean_logs.py
     ├── data
     │   ├── clean
     │   │   ├── clean_logs_report.log
@@ -48,6 +47,7 @@ Parses valid lines into structured records: `timestamp`, `method`, `endpoint`, `
     │   └── validation
     │       ├── log_validation_report.csv
     │       └── log_validation_report.json
+    ├── clean_logs.py
     ├── generate_logs.py
     └── validation.py
 ├── LICENSE
