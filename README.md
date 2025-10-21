@@ -107,3 +107,5 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     - `log_validation_report.json` → list of invalid log lines with error details.
 
 ---
+
+### 🧩 Usage & Customization
