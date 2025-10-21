@@ -107,15 +107,3 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
     - `log_validation_report.json` → list of invalid log lines with error details.
 
 ---
-
-### 🚀 Tech Stack
-
-- Python 3.11+.
-
-- Apache Beam (batch pipeline).
-
-- Faker (for synthetic log generation).
-
-- CSV output for reporting.
-
----
