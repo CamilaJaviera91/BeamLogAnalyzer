@@ -121,3 +121,4 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 
 - 🚀 Rapid setup of a log-processing pipeline using Apache Beam.
 - ✅ Includes validation logic so you don’t just parse logs blindly — you also catch bad/malformed lines.
+- 📊 Produces actionable metrics: counts, response times, endpoint popularity.
