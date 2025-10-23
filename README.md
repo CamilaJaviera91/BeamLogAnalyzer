@@ -118,3 +118,5 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 ---
 
 ### ✅ Why use this?
+
+- 🚀 Rapid setup of a log-processing pipeline using Apache Beam.
