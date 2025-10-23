@@ -13,7 +13,8 @@ It simulates log data, parses it, validates it, and generates meaningful insight
 - Log validation: detects malformed lines (missing fields, bad timestamps, etc).  
 Parses valid lines into structured records: 
     - `timestamp`
-    - `method`, `endpoint`, `status_code`, `response_time`.  
+    - `method`
+    - `endpoint`, `status_code`, `response_time`.  
 - Classifies status codes into categories: 2xx (success), 4xx (client error), 5xx (server error). 
 - Computes metrics such as: 
     - Requests per minute  
