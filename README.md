@@ -116,3 +116,5 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 - Extend output formats (e.g., Parquet, BigQuery) or integrate with a streaming runner if needed.
 
 ---
+
+### ✅ Why use this?
