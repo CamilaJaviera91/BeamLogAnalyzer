@@ -125,3 +125,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 - 🔧 Easily extensible to other log formats or more advanced analytics.
 
 ---
+
+### 🧑‍💻 Author & License
+
+Author: Camila Javiera
