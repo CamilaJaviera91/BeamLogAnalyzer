@@ -129,3 +129,9 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 ### 🧑‍💻 Author & License
 
 Author: Camila Javiera
+
+---
+
+### 📬 Questions or Feedback
+
+Feel free to open an issue or contact me. Contributions are welcome!
