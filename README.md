@@ -68,7 +68,7 @@ Parses valid lines into structured records:
 
 - Logs are simulated in a `logs.log` file (generated with **Faker** or taken from an **Apache/Nginx dataset**).  
 - ⚠️ The dataset is **not clean** and intentionally contains some **invalid or corrupted log lines**, such as:  
-    - Missing fields (e.g., no endpoint or no response time).
+    - Missing fields.
     - Malformed timestamps.
 
 This ensures the pipeline also handles **data quality validation**.
