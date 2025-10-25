@@ -95,7 +95,8 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
         - `timestamp`
         - `method`
         - `endpoint`
-        - `status_code`, `response_time`
+        - `status_code`
+        - `response_time`
     
     - Classify status codes: 
         - `2xx` → success 
