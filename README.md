@@ -132,7 +132,7 @@ TIMESTAMP METHOD ENDPOINT STATUS_CODE RESPONSE_TIME
 - ✅ Includes validation logic so you don’t just parse logs blindly — you also catch bad/malformed lines.
 - 📊 Produces actionable metrics:
     - counts
-    - response times
+    - response times.
     - endpoint popularity.
 - 🔧 Easily extensible to other log formats or more advanced analytics.
 
